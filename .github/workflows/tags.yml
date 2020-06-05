@@ -23,7 +23,7 @@ jobs:
 
       - name: Build with Maven
         run: |
-          tar -zcvf java-live-sdk-${{ VERSION }}.tar.gz pom.xml
+          tar -zcvf java-live-sdk-${{ env.VERSION }}.tar.gz pom.xml
 
       - name: Create Release
         id: create_release
